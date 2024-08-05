@@ -1,0 +1,18 @@
+body{
+	font-family: $font-family;
+	position: relative;
+	&._lock{
+		 overflow: hidden;
+	}
+}
+[class*="__container"]{
+	max-width: $container-width + $main-offset*2;
+	padding: 0 $main-offset;
+	margin: 0 auto;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+  overflow: hidden;
+}

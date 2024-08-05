@@ -1,0 +1,11 @@
+@use "sass:math";
+//FONTS--------------------------------------
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+//--------------------------------------
+@import "../assets/scss/config/fonts";
+@import "../assets/scss/config/functions";
+@import "../assets/scss/config/mixins";
+@import "../assets/scss/config/vars";
+@import "../assets/scss/config/reset";
+@import "../assets/scss/config/base";
