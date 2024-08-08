@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 import "./globals.scss";
 
 
@@ -13,7 +14,12 @@ export default function RootLayout({
 			<body>
 				<div className="wrapper">
 					<Header />
-					{children}
+
+					<main className="main">
+						{children}
+					</main>
+
+					<Footer />
 				</div>
 			</body>
 		</html>
