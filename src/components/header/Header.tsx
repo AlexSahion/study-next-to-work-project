@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from "react";
 import HeaderMenu from "./HeaderMenu"
+import Logo from './Logo';
 
 export default function Header() {
 	const [active, setActive] = useState(false)
@@ -19,18 +20,8 @@ export default function Header() {
 	return (
 		<header className="header">
 			<div className="header__container">
-				<Link className="header__logo" href='/'>
-					<div className="header__logo-img">
-						<img src="/img/header/logo.svg" alt="img" />
-					</div>
-					<div className="header__logo-titles">
-						<div className="header__logo-title">На Работу 24</div>
-						<div className="header__logo-subtitle">доставка сотрудников</div>
-					</div>
-				</Link>
-
+				<Logo className={'header'} />
 				<HeaderMenu active={active} />
-
 				<div className="header__order">
 					<a className='_icon-phone' href="#">Заказать звонок</a>
 				</div>
