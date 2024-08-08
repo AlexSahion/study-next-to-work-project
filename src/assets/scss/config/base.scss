@@ -17,3 +17,11 @@ body{
   overflow: hidden;
   padding-bottom: 1500px;
 }
+
+.main{
+	padding-top: 70px;
+
+	@media (max-width: 560px) {
+		padding-top: 48px;
+	}
+}
