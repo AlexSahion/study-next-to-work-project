@@ -17,12 +17,14 @@
 
 	@media (max-width: 530px) {
 		padding: 20px;
+		max-height: 1000px;
 	}
 
 	&__title {
 		font-size: 48px;
 		font-weight: 700;
-
+		line-height: 130%;
+		
 		span{
 			color: rgb(131, 35, 53);
 		}
