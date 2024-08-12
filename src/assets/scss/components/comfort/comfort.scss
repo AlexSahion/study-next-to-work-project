@@ -1,0 +1,19 @@
+@import "../comfort/item-comfort.scss";
+
+.comfort {
+	&__container {
+		@include adaptive-value("padding-top", 120, 40);
+	}
+
+	&__content {
+		margin-top: 41px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+
+		@media (max-width: 500px) {
+			row-gap: 20px;
+			margin-top: 24px;
+		}
+	}
+}
