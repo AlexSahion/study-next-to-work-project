@@ -2,7 +2,7 @@ export default function Expirience() {
 	return (
 		<section className="expirience">
 			<div className="expirience__container">
-				<div className="expirience__titles">
+				<div className="expirience__titles titles">
 					<div className="expirience__title title">Один перевозчик <span>в любом городе</span> России</div>
 					<div className="expirience__subtitle subtitle">Почему мы?</div>
 				</div>
