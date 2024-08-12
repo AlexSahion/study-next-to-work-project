@@ -5,18 +5,7 @@
 		flex-direction: column;
 		@include adaptive-value("row-gap", 40, 12);
 	}
-
-	&__titles {
-		display: flex;
-		justify-content: space-between;
-		column-gap: 20px;
-		align-items: start;
-
-		@media (max-width: 455px) {
-			flex-direction: column-reverse;
-		}
-	}
-
+	
 	&__item {
 		font-size: $font-size-second;
 		line-height: 130%;
