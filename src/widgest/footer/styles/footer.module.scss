@@ -1,0 +1,48 @@
+@import '../../../shared/styles/mixins.scss';
+
+.footer {
+	background-color: rgb(23, 22, 22);
+
+	&__container {
+		@include adaptive-value('padding-top', 40, 20);
+	}
+}
+
+.content {
+	display: flex;
+	border-bottom: 1px solid rgb(50, 50, 50);
+	@include adaptive-value('padding-bottom', 40, 20);
+	flex-wrap: wrap;
+	gap: 20px;
+
+	@media (max-width: 890px) {
+		justify-content: space-between;
+	}
+
+	@media (max-width: 525px) {
+		padding-bottom: 0px;
+	}
+
+	@media (max-width: 450px) {
+		flex-direction: column;
+	}
+}
+
+.company {
+	flex: 0 1 20%;
+}
+
+.text {
+	margin-top: 20px;
+	line-height: 140%;
+	color: #fff;
+}
+
+.copyright {
+	@include adaptive-value('padding-top', 40, 20);
+	@include adaptive-value('padding-bottom', 40, 20);
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.5;
+	text-align: center;
+}

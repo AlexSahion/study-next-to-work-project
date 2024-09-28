@@ -5,31 +5,10 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
 //--------------------------------------
 
-@import "../assets/scss/config/fonts";
-@import "../assets/scss/config/icons.scss";
-@import "../assets/scss/config/functions";
-@import "../assets/scss/config/mixins";
-@import "../assets/scss/config/vars";
-@import "../assets/scss/config/reset";
-@import "../assets/scss/config/base";
-
-//COMPONENTS--------------------------------------
-
-//HEADER
-@import "../assets/scss/components/header/header.scss";
-@import "../assets/scss/components/header/header-menu.scss";
-
-//PROMO
-@import "../assets/scss/components/promo/promo.scss";
-
-//EXPIRIENCE
-@import "../assets/scss/components/expirience/expirience.scss";
-
-//COMFORT
-@import "../assets/scss/components/comfort/comfort.scss";
-
-//MAIN-BUTTON
-@import "../assets/scss/components/main-button.scss";
-
-//FOOTER
-@import "../assets/scss/components/footer/footer.scss";
+@import "../shared/styles/base.scss";
+@import "../shared/styles/icons.scss";
+@import "../shared/styles/functions";
+@import "../shared/styles/mixins";
+@import "../shared/styles/vars";
+@import "../shared/styles/reset";
+@import "../shared/styles/base";

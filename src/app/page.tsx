@@ -1,6 +1,6 @@
-import Promo from "@/components/home/promo/Promo";
-import Expirience from "@/components/home/expirience/Expirience";
-import Comfort from "@/components/home/comfort/Comfort";
+import Promo from "@/sections/promo/Promo";
+import Expirience from "@/sections/expirience/Expirience";
+import Comfort from "@/sections/comfort/Comfort";
 
 export default function Home() {
 	return (
