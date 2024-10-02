@@ -1,27 +1,18 @@
-import type { Metadata } from "next";
-import Header from "@/widgest/header/Header";
-import Footer from "@/widgest/footer/Footer";
 import "./globals.scss";
 
+import type { Metadata } from "next";
+import { type PropsWithChildren } from "react";
+import { BaseProvider } from './_providers'
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+
+export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en">
 			<body>
-				<div className="wrapper">
-					<Header />
-
-					<main className="main">
-						{children}
-					</main>
-
-					<Footer />
-				</div>
+				<BaseProvider>
+					{children}
+				</BaseProvider>
 			</body>
-		</html>
+		</html >
 	);
 }
