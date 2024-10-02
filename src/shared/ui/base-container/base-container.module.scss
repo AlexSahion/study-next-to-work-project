@@ -1,0 +1,8 @@
+$container-width: 1160px;
+$main-offset: 10px;
+
+.container{
+	max-width: $container-width + $main-offset*2; //Посчитать контейнер
+	padding: 0 $main-offset;
+	margin: 0 auto;
+}
