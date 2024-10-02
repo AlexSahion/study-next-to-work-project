@@ -1,6 +1,6 @@
-import Promo from "@/sections/promo/Promo";
-import Expirience from "@/sections/expirience/Expirience";
-import Comfort from "@/sections/comfort/Comfort";
+import { Promo } from "@/sections/promo";
+import { Expirience } from "@/sections/expirience";
+import { Comfort } from "@/sections/comfort";
 
 export default function Home() {
 	return (
