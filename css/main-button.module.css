@@ -1,0 +1,13 @@
+.main-button {
+  border-radius: 10px;
+  background: rgb(131, 35, 53);
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .main-button:hover {
+    background-color: rgb(92, 8, 24);
+  }
+}

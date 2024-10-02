@@ -1,0 +1,74 @@
+.conditionsPromo {
+  grid-area: conditions;
+  display: flex;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 760px) {
+  .conditionsPromo {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.conditionsPromo::before, .conditionsPromo::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 120%;
+  height: 100px;
+}
+@media (max-width: 760px) {
+  .conditionsPromo::before, .conditionsPromo::after {
+    bottom: -30px;
+  }
+}
+.conditionsPromo::before {
+  background-color: rgb(131, 35, 53);
+  transform: rotate(5deg);
+  z-index: 2;
+  bottom: -60px;
+  left: -10px;
+}
+.conditionsPromo::after {
+  background-color: rgb(50, 50, 50);
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.cars {
+  position: relative;
+  z-index: 3;
+}
+.cars img {
+  max-width: 500px;
+}
+@media (max-width: 550px) {
+  .cars img {
+    max-width: 350px;
+  }
+}
+
+.buns {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+@media (max-width: 960px) {
+  .buns {
+    padding: 20px;
+  }
+}
+
+.bun {
+  flex: 0 1 45%;
+}
+@media (max-width: 960px) {
+  .bun {
+    flex: 0 1 80%;
+  }
+}

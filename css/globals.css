@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+body {
+  font-family: "Manrope";
+  position: relative;
+}
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  padding-top: 70px;
+}
+@media (max-width: 560px) {
+  .main {
+    padding-top: 48px;
+  }
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: start;
+  row-gap: 8px;
+}
+@media (max-width: 455px) {
+  .titles {
+    flex-direction: column-reverse;
+  }
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.title span {
+  color: rgb(131, 35, 53);
+}
+@media (max-width: 640px) {
+  .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 455px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  margin-top: 13px;
+  padding: 4px 16px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+@media (max-width: 455px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+[class*=_icon-]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=_icon-]:before {
+  display: block;
+}
+
+._icon-all:before {
+  content: "\e900";
+}
+
+._icon-arrow:before {
+  content: "\e901";
+}
+
+._icon-calc:before {
+  content: "\e902";
+}
+
+._icon-clock:before {
+  content: "\e903";
+}
+
+._icon-fix:before {
+  content: "\e904";
+}
+
+._icon-logo:before {
+  content: "\e905";
+}
+
+._icon-mail:before {
+  content: "\e906";
+}
+
+._icon-ok:before {
+  content: "\e907";
+}
+
+._icon-phone:before {
+  content: "\e908";
+}
+
+._icon-sub-arrow:before {
+  content: "\e909";
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+body {
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  font-weight: var(--base-font-weight);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  line-height: 1;
+  /** fix for edge */
+  overscroll-behavior: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button,
+a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+button {
+  background-color: transparent;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+sup {
+  color: inherit;
+}
+
+body {
+  font-family: "Manrope";
+  position: relative;
+}
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  padding-top: 70px;
+}
+@media (max-width: 560px) {
+  .main {
+    padding-top: 48px;
+  }
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: start;
+  row-gap: 8px;
+}
+@media (max-width: 455px) {
+  .titles {
+    flex-direction: column-reverse;
+  }
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.title span {
+  color: rgb(131, 35, 53);
+}
+@media (max-width: 640px) {
+  .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 455px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  margin-top: 13px;
+  padding: 4px 16px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+@media (max-width: 455px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,48 @@
+.links {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  flex: 1 0 auto;
+  justify-content: space-around;
+}
+@media (max-width: 890px) {
+  .links {
+    flex: 0 1 100%;
+    order: 2;
+    justify-content: space-between;
+    border-top: 1px solid rgb(50, 50, 50);
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 525px) {
+  .links {
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 20px 0;
+    order: 0;
+    border-bottom: 1px solid rgb(50, 50, 50);
+  }
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.link {
+  line-height: 140%;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+@media (hover: hover) {
+  .link:hover {
+    color: rgb(131, 35, 53);
+  }
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}

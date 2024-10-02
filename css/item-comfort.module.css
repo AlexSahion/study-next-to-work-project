@@ -1,0 +1,73 @@
+.itemComfort {
+  display: flex;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  background: rgb(255, 255, 255);
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .itemComfort {
+    flex-direction: column;
+  }
+}
+
+.content {
+  flex: 0 1 50%;
+  padding: 40px;
+}
+@media (max-width: 500px) {
+  .content {
+    padding: 20px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 16px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.list li {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  line-height: 140%;
+}
+.list li::before {
+  color: rgb(131, 35, 53);
+  font-size: 19px;
+}
+@media (max-width: 500px) {
+  .list li {
+    font-size: 14px;
+  }
+}
+
+.img img {
+  max-width: 100%;
+}
+
+.itemComfortReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  .itemComfortReverse {
+    flex-direction: column;
+  }
+}
+
+.itemComfortImageEnd {
+  align-items: end;
+}
