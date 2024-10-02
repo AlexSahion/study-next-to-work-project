@@ -1,0 +1,51 @@
+@import '@styles/vars';
+
+.contacts {
+	line-height: 140%;
+	color: #fff;
+
+	& > a{
+		display: flex;
+		column-gap: 5px;
+		align-items: center;
+		transition: $default-trans;
+
+		&:hover{
+			@media (hover:hover) {
+				color: $burgundy-color;
+			}
+		}
+	}
+
+	@media (max-width: 525px) {
+		padding-bottom: 20px;
+	}
+
+	@media (max-width: 450px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.email {
+	margin-bottom: 15px;
+}
+
+.phone {
+	margin-bottom: 20px;
+}
+
+.order {
+	display: flex;
+	flex-direction: row-reverse;
+	column-gap: 8px;
+	min-height: 56px;
+	align-items: center;
+	justify-content: center;
+	padding: 0 32px;
+	span{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
