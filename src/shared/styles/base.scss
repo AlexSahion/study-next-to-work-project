@@ -7,11 +7,7 @@ body{
 		 overflow: hidden;
 	}
 }
-[class*="__container"]{
-	max-width: $container-width + $main-offset*2;
-	padding: 0 $main-offset;
-	margin: 0 auto;
-}
+
 .wrapper{
 	display: flex;
 	flex-direction: column;
