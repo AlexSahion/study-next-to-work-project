@@ -4,7 +4,7 @@ interface LogoProps {
 	className?: string;
 }
 
-export default function Logo({ className = '' }: LogoProps) {
+export const Logo = ({ className = '' }: LogoProps) => {
 	return (
 		<Link className={`${className}__logo`} href="/">
 			<div className={`${className}__logo-img`}>
