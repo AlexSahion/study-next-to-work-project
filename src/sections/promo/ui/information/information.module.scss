@@ -1,6 +1,6 @@
-@import '../../../shared/styles/vars.scss';
+@import '@styles/vars';
 
-.informationPromo {
+.information {
 	grid-area: information;
 	max-height: 500px;
 	padding: 40px;

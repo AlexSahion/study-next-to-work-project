@@ -1,0 +1,26 @@
+.bun{
+	position: relative;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.icon {
+	border: 1px solid rgb(188, 188, 188);
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+	padding: 12px;
+
+	img{
+		width: 30px;
+	}
+}
+
+.text {
+	line-height: 140%;
+
+	@media (max-width: 530px) {
+		font-size: 14px;
+	}
+}

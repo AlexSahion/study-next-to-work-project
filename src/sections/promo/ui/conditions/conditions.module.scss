@@ -1,6 +1,6 @@
-@import '../../../shared/styles/vars.scss';
+@import '@styles/vars';
 
-.conditionsPromo {
+.conditions {
 	grid-area: conditions;
 	display: flex;
 	align-items: start;
@@ -54,8 +54,6 @@
 }
 
 .buns {
-	position: relative;
-	z-index: 3;
 	display: flex;
 	gap: 15px;
 	flex-wrap: wrap;
