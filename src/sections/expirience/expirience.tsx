@@ -1,19 +1,13 @@
 import css from './expirience.module.scss';
 import { CircleCheck } from 'lucide-react';
 import { BaseContainer } from '@/shared/ui';
+import { Titles } from '@/shared/ui';
 
 export const Expirience = () => {
 	return (
 		<section className={css.expirience}>
 			<BaseContainer className={css.container}>
-				<div className={css.titles}>
-					<div className={css.title}>
-						Один перевозчик <span>в любом городе</span> России
-					</div>
-					<div className={css.subtitle}>
-						Почему мы?
-					</div>
-				</div>
+				<Titles beforeSpan='Один перевозчик' span=' в любом городе ' afterSpan='России' subtitle='Почему мы?' />
 				<div className={css.item}>
 					<CircleCheck size={25} />
 					На Работу 24 является лидером в сфере организации
