@@ -1,3 +1,5 @@
 export { Promo } from './promo'
 export { Expirience } from './expirience'
 export { Comfort } from './comfort'
+export { ProblemSolving } from './problem-solving'
+export { Service } from './service'
