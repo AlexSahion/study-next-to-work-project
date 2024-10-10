@@ -1,0 +1,1 @@
+export { GrayRed } from './gray-red'
