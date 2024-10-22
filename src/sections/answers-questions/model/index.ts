@@ -1,0 +1,1 @@
+export { itemAccordion } from './item-accordion'

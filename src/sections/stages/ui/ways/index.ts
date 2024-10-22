@@ -1,0 +1,1 @@
+export { Ways } from './ways'

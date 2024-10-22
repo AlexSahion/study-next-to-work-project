@@ -1,0 +1,1 @@
+export { stagesWay } from './stages-ways'

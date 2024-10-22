@@ -1,0 +1,1 @@
+import { Ways } from './ways'
