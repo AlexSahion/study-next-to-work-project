@@ -13,5 +13,4 @@ export const links = [
 		name: 'Лицензия',
 		href: '#'
 	}
-
 ]

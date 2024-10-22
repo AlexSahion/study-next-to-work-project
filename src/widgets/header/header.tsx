@@ -22,8 +22,7 @@ export const Header = () => {
 	};
 
 	return (
-		// TODO: использовать cn
-		<header className={`${css.header} ${isActive ? css._lock : ''}`}>
+		<header className={css.header}>
 			<BaseContainer className={css.container}>
 				<Link className={css.logo} href="/">
 					<div className={css.logoImg}>
