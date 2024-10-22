@@ -1,0 +1,60 @@
+@import '@styles/mixins';
+@import '@styles/vars';
+
+.container{
+	@include adaptive-value('padding-top', 120, 40);
+}
+
+.buns{
+	@include adaptive-value('margin-top', 60, 35);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (max-width: 750px) {
+		flex-direction: column;
+		align-items: stretch;
+		row-gap: 20px;
+	}
+
+	@media (max-width: 450px) {
+		row-gap: 10px;
+	}
+}
+
+.bun{
+	flex: 0 1 47%;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	padding: 20px;
+	border-radius: 20px;
+
+	&:first-child{
+		background-color: $burgundy-color;
+	}
+
+	&:last-child{
+		background-color: rgb(50, 50, 50);
+	}
+
+	@media (max-width: 750px) {
+		flex: 0 1 100%;
+	}
+}
+
+.icon{
+	padding: 12px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.2);
+
+	svg{
+		color: #fff;
+	}
+}
+
+.text{
+	color: #fff;
+	line-height: 140%
+}

@@ -1,0 +1,107 @@
+@import "@styles/vars";
+@import '@styles/mixins';
+
+.items{
+	@include adaptive-value('margin-top', 60, 20);
+	display: flex;
+
+	@media (max-width: 790px) {
+		flex-direction: column;
+	}
+}
+
+.item{
+	flex: 0 1 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	@media (max-width: 790px) {
+		flex-direction: row;
+	}
+}
+
+.steps{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 109%;
+	min-height: 59px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px 0;
+
+	@media (max-width: 790px) {
+		min-width: 85px;
+		min-height: 100px;
+	}
+}
+
+.step{
+	color: $burgundy-color;
+	font-weight: 600;
+
+	svg{
+		color: #fff;
+	}
+}
+
+.text{
+	margin-top: 77px;
+	line-height: 140%;
+	max-width: 75%;
+
+	@media (max-width: 910px) {
+		max-width: 90%;
+	}
+
+	@media (max-width: 790px) {
+		margin-top: 0;
+		margin-left: 120px;
+		min-height: 85px;
+		display: flex;
+		align-items: center;
+	}
+
+	@media (max-width: 450px) {
+		margin-left: 110px;
+	}
+}
+
+.way1{
+	background: rgb(241, 241, 241);
+	z-index: 6;
+}
+
+.way2{
+	background: rgb(228, 216, 218);
+	z-index: 5;
+}
+
+.way3{
+	background: rgb(212, 193, 196);
+	z-index: 4;
+}
+
+.way4{
+	background: rgb(197, 159, 166);
+	z-index: 3;
+}
+
+.way5{
+	background: rgb(181, 132, 141);
+	z-index: 2;
+}
+
+.way6{
+	background: rgb(131, 35, 53);
+	min-width: 100%;
+	z-index: 1;
+
+	@media (max-width: 790px) {
+		min-width: 85px;
+	}
+}
