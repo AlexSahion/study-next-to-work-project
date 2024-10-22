@@ -1,0 +1,31 @@
+@import "@styles/mixins";
+
+.container{
+	@include adaptive-value("padding-top", 120, 40);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	@include adaptive-value("margin-top", 40, 20);
+	@include adaptive-value("row-gap", 40, 20);
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 20px;
+	column-gap: 8px;
+
+	svg{
+		color: $burgundy-color;
+	}
+}
+
+.text {
+	font-size: 16px;
+	line-height: 140%;
+}	
+
