@@ -1,11 +1,13 @@
 import { Interface } from 'readline'
+import cn from "classnames"
 import css from './titles.module.scss'
+import classNames from 'classnames'
 
 interface Props {
 	beforeSpan: string,
 	span: string,
 	afterSpan: string,
-	subtitle: string
+	subtitle: string,
 }
 
 export const Titles = ({ beforeSpan, span, afterSpan, subtitle }: Props) => {
@@ -14,9 +16,11 @@ export const Titles = ({ beforeSpan, span, afterSpan, subtitle }: Props) => {
 			<div className={css.title}>
 				{beforeSpan}<span>{span}</span>{afterSpan}
 			</div>
-			<div className={css.subtitle}>
-				{subtitle}
-			</div>
-		</div>
+			{subtitle && (
+				<div className={css.subtitle}>
+					{subtitle}
+				</div>
+			)}
+		</div >
 	)
 }
