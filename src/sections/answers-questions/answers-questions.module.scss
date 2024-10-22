@@ -1,0 +1,66 @@
+@import '@styles/mixins';
+@import '@styles/vars';
+
+.container{
+	@include adaptive-value("padding-top", 120, 40);
+}
+
+.items {
+	@include adaptive-value("margin-top", 40, 20);
+	@include adaptive-value("row-gap", 40, 20);
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: wrap;
+}
+
+.item {
+	padding: 20px;
+	flex: 0 1 48%;
+	border: 1px solid rgb(188, 188, 188);
+	border-radius: 20px;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+	background: rgb(255, 255, 255);
+	cursor: pointer;
+	display: grid;
+	grid-template-rows: auto 0fr;
+	row-gap: 0;
+	overflow: hidden;
+	transition: $default-trans;
+
+	@media (max-width: 640px) {
+		flex: 0 1 100%;
+	}
+}
+
+.header {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 18px;
+   line-height: 140%;
+}
+
+.icon{
+	color: $burgundy-color;
+	transition: $default-trans;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 140%;
+	overflow: hidden;
+}
+
+.active{
+	grid-template-rows: auto 1fr;
+	row-gap: 12px;
+}
+
+.active .icon{
+	transform: rotate(180deg);
+}
