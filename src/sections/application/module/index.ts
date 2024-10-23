@@ -1,0 +1,1 @@
+export { itemsApplication } from './items-application'

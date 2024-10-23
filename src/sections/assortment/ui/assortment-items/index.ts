@@ -1,0 +1,1 @@
+export { AssortmentItems } from './assortment-items'
