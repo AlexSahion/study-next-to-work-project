@@ -1,4 +1,5 @@
 import css from './all-button.module.scss'
+import Link from 'next/link'
 
 interface allButtnoProps {
 	text: string,
@@ -7,7 +8,6 @@ interface allButtnoProps {
 
 export const AllButton = ({ text, routerMap }: allButtnoProps) => {
 	return (
-		// TODO: hover on button
-		<div className={css.button}><a href={routerMap}>{text}</a></div>
+		<div className={css.button}><Link href={routerMap}>{text}</Link></div>
 	)
 }
