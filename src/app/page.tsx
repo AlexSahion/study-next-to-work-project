@@ -8,6 +8,8 @@ import { CountCost } from "@/sections";
 import { Reliability } from "@/sections";
 import { AnswersQuestions } from "@/sections";
 import { Stages } from "@/sections";
+import { Assortment } from "@/sections";
+import { Application } from "@/sections";
 
 export default function Home() {
 	return (
@@ -16,6 +18,8 @@ export default function Home() {
 			<Expirience />
 			<ProblemSolving />
 			<Comfort />
+			<Application />
+			<Assortment />
 			<Service />
 			<CountCost />
 			<Stages />
