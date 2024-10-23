@@ -1,0 +1,11 @@
+@import '@styles/vars';
+@import '@styles/mixins';
+
+.container{
+	@include adaptive-value("padding-top", 120, 40);
+}
+
+.allButton{
+	display: flex;
+	justify-content: center;
+}
