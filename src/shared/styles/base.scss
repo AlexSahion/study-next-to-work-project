@@ -68,3 +68,23 @@ body{
 		font-size: 14px;
 	}
 }
+
+.swiper {
+	position: relative;
+
+	.swiper-pagination{
+		margin-top: 20px;
+		position: relative;
+	}
+
+	.swiper-pagination-bullet {
+		background: rgb(188, 188, 188);
+		width: 8px;
+		height: 8px;
+		transition: $default-trans;
+
+		 &.swiper-pagination-bullet-active {
+				background: rgb(131, 35, 53);
+		 }
+	}
+}
