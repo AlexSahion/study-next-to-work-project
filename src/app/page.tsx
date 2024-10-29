@@ -10,6 +10,7 @@ import { AnswersQuestions } from "@/sections";
 import { Stages } from "@/sections";
 import { Assortment } from "@/sections";
 import { Application } from "@/sections";
+import { Partners } from "@/sections";
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 			<Application />
 			<Assortment />
 			<Service />
+			<Partners />
 			<CountCost />
 			<Stages />
 			<AnswersQuestions />

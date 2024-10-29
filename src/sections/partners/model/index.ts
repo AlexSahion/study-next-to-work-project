@@ -1,0 +1,1 @@
+export { partnersItem } from './partners-item'
