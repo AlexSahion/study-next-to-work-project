@@ -12,6 +12,10 @@
 	.filter:last-of-type .titles {
 			min-width: 100%;
 	}
+
+	@media (max-width: 750px) {
+		display: none;
+	}
 }
 
 .filter{
@@ -32,6 +36,14 @@
 
 	&:hover{
 		background: rgb(50, 50, 50);
+
+		.title{
+			color: #FFF;
+		}
+
+		.subtitle{
+			color: #FFF;
+		}
 	}
 }
 
