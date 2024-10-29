@@ -1,0 +1,36 @@
+@import "@styles/mixins";
+
+.container {
+	@include adaptive-value("padding-top", 120, 40);
+}
+
+.text {
+	@include adaptive-value('margin-top', 20, 12)
+}
+
+.img {
+	img{
+		max-width: 100%;
+	}
+}
+
+.swiper {
+	@include adaptive-value('margin-top', 40, 12)
+}
+
+.slide{
+	border: 1px solid rgb(188, 188, 188);
+	border-radius: 20px;
+	background: rgb(255, 255, 255);
+	min-height: 110px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 5px;
+}
+
+.logo {
+	img{
+		max-width: 100%;
+	}
+}
