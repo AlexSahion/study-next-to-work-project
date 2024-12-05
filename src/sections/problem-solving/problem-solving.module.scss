@@ -19,14 +19,6 @@
 	}
 }
 
-.swiper{
-	@include adaptive-value("margin-top", 30, 20);
-
-	@media (min-width: 850px) {
-		display: none;
-	}
-}
-
 .clock{
 	grid-area: clock;
 }
@@ -86,5 +78,14 @@
 
 	img{
 		max-width: 100%;
+	}
+}
+
+
+.swiper{
+	@include adaptive-value("margin-top", 30, 20);
+
+	@media (min-width: 850px) {
+		display: none;
 	}
 }
