@@ -26,19 +26,18 @@ export const Partners = () => {
 						breakpoints={{
 							660: {
 								spaceBetween: 40,
+								slidesPerGroup: 4,
+								slidesPerView: 4,
 							},
 
 							570: {
 								spaceBetween: 15,
-								slidesPerGroup: 4,
-								slidesPerView: 4,
+								slidesPerGroup: 2,
+								slidesPerView: 2,
 							}
 						}}
 						pagination={{ clickable: true }}
 						className={css.swiperBody}
-						spaceBetween={15}
-						slidesPerGroup={2}
-						slidesPerView={2}
 						onSlideChange={() => console.log('slide change')}
 						onSwiper={(swiper) => console.log(swiper)}>
 						{partnersItem.map(item => (
