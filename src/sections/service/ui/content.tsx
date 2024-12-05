@@ -14,7 +14,7 @@ export const Content = () => {
 					</div>
 					<div className={css.bottom}>
 						<div className={css.title}>{title}</div>
-						<div className={css.button}><Link href='#' className={css.link}><ArrowUpRight size={19} /></Link></div>
+						<div className={css.button}><Link href={routerMap.services} className={css.link}><ArrowUpRight size={19} /></Link></div>
 					</div>
 				</div>
 			))}
