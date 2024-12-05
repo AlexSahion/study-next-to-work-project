@@ -1,10 +1,11 @@
 'use client';
 
-import css from './problem-solving.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
+// TODO: info about style 
+import css from './problem-solving.module.scss'
 import cn from 'classnames';
 import { item } from './ui';
 import { BaseContainer } from '@/shared/ui';
