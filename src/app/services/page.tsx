@@ -1,7 +1,16 @@
+import { Service } from "@/sections"
+import { Stages } from "@/sections"
+import { Reliability } from "@/sections"
+import { CountCost } from "@/sections"
+import { PopupProvider } from "../_providers"
+
 export default function Services() {
 	return (
-		<h1>
-			Services
-		</h1>
+		<PopupProvider>
+			<Service />
+			<Stages />
+			<Reliability />
+			<CountCost />
+		</PopupProvider>
 	)
 } 

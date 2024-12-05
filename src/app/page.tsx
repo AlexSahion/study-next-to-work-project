@@ -11,10 +11,13 @@ import { Stages } from "@/sections";
 import { Assortment } from "@/sections";
 import { Application } from "@/sections";
 import { Partners } from "@/sections";
+import { Popup } from "@/sections";
+import { PopupProvider } from "./_providers";
 
 export default function Home() {
 	return (
-		<>
+		<PopupProvider>
+			<Popup />
 			<Promo />
 			<Expirience />
 			<ProblemSolving />
@@ -28,6 +31,6 @@ export default function Home() {
 			<AnswersQuestions />
 			<Reliability />
 			<Questions />
-		</>
+		</PopupProvider>
 	);
 }
