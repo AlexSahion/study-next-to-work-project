@@ -2,6 +2,7 @@
 
 import css from './assortment.module.scss'
 import { useState } from 'react'
+import { routerMap } from '@/shared/config'
 import { BaseContainer, Titles } from "@/shared/ui"
 import { AllButton } from '@/shared/ui'
 import { AssortmentItems } from './ui/assortment-items'
@@ -21,7 +22,7 @@ export const Assortment = () => {
 				<Filters toogleFiltre={toogleActiveFiltre} />
 				<AssortmentItems activeFilter={activeFiltre} />
 				<div className={css.allButton}>
-					<AllButton routerMap='autopark' text='Показать весь автопарк' />
+					<AllButton routerMap={routerMap.autopark} text='Показать весь автопарк' />
 				</div>
 			</BaseContainer>
 		</section>
