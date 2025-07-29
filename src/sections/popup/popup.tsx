@@ -2,16 +2,15 @@
 
 import css from './popup.module.scss'
 import { useState } from 'react'
+import { useMyPopup } from '@/shared/hooks'
 import cn from 'classnames'
 import { Form } from './ui'
 import { BaseContainer } from '@/shared/ui'
-import { useMyContext } from '@/shared/hooks'
 
 
 export const Popup = () => {
-
 	const [isChecked, setIsChecked] = useState(false)
-	const { isPopupOpen, setIsPopupOpen } = useMyContext()
+	const { isPopupOpen, setIsPopupOpen } = useMyPopup()
 
 	const handleOnChange = () => {
 		setIsChecked(!isChecked)
