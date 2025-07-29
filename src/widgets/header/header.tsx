@@ -5,12 +5,14 @@ import { Phone } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import cn from 'classnames'
+import { useMyPopup } from '@/shared/hooks';
 import { Menu } from './ui';
 import { Logo } from '@/shared/ui';
 import { BaseContainer } from '@/shared/ui';
 
 export const Header = () => {
 	const [isActive, setIsActive] = useState(false);
+	const { isPopupOpen, setIsPopupOpen } = useMyPopup()
 
 	const toggleClass = () => {
 		if (!isActive) {
@@ -35,7 +37,7 @@ export const Header = () => {
 				</Link>
 				<Menu isActive={isActive} />
 				<div className={css.order}>
-					<a href="#"><Phone size={20} />Заказать звонок</a>
+					<a onClick={() => setIsPopupOpen(!isPopupOpen)} href="#"><Phone size={20} />Заказать звонок</a>
 				</div>
 				<div onClick={toggleClass} className={cn(css.icon, '_icon-phone')}>
 					<span></span>
