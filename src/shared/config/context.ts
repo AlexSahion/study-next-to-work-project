@@ -1,10 +1,9 @@
 'use client'
+import { createContext } from "react";
 
-import { createContext, Dispatch, SetStateAction } from "react";
-
-interface popupContextProps {
+interface PopupProps {
 	isPopupOpen: boolean,
-	setIsPopupOpen: Dispatch<SetStateAction<boolean>>
+	setIsPopupOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export const popupContext = createContext<popupContextProps | undefined>(undefined)
+export const Popup = createContext<PopupProps | undefined>(undefined)
