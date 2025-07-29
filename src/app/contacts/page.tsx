@@ -1,12 +1,13 @@
 import { Questions } from "@/sections"
 import { Info } from "@/sections"
-import { PopupProvider } from "../_providers"
+import { Popup } from "@/sections"
 
 export default function Contacts() {
 	return (
-		<PopupProvider>
+		<>
+			<Popup />
 			<Info />
 			<Questions />
-		</PopupProvider>
+		</>
 	)
 }
