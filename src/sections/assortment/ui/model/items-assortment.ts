@@ -1,4 +1,4 @@
-interface Vehicle {
+export interface Vehicle {
 	name: string;
 	capacity: number;
 	price: number;
