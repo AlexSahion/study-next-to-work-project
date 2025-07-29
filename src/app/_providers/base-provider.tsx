@@ -1,16 +1,19 @@
 import { type PropsWithChildren } from "react";
+import { PopupContext } from "./popup-provider";
 import { Header, Footer } from "@/widgets";
 
 export const BaseProvider = ({ children }: PropsWithChildren) => {
 	return (
 		<div className="wrapper">
-			<Header />
+			<PopupContext>
+				<Header />
 
-			<main className="main">
-				{children}
-			</main>
+				<main className="main">
+					{children}
+				</main>
 
-			<Footer />
+				<Footer />
+			</PopupContext>
 		</div>
 	);
 }
