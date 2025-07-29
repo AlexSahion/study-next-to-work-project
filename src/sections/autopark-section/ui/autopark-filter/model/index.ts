@@ -1,0 +1,1 @@
+export { assortments, grays } from './model'

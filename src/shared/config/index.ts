@@ -1,2 +1,3 @@
 export { routerMap } from './router-map'
-export { popupContext } from './context'
+export { Popup } from './context'
+export { mapCapacity, mapCostType, mapSortByType, type FiltersKey } from './interfaces'

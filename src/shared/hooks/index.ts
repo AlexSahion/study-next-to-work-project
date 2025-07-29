@@ -1,1 +1,2 @@
-export { useMyContext } from './use-my-context'
+export { useMyPopup } from './use-my-popup'
+export { useFilterAssortment } from './use-filter-assortment'
