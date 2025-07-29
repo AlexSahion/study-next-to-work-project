@@ -1,18 +1,13 @@
 'use client'
-
-import { popupContext } from "@/shared/config";
 import { useState } from "react";
+import { type PropsWithChildren } from "react";
+import { Popup } from "@/shared/config";
 
-interface PopupContextProps {
-	children: React.ReactNode
-}
-
-export const PopupProvider = ({ children }: PopupContextProps) => {
+export const PopupContext: React.FC<PropsWithChildren> = ({ children }) => {
 	const [isPopupOpen, setIsPopupOpen] = useState(false)
-
 	return (
-		<popupContext.Provider value={{ isPopupOpen, setIsPopupOpen }}>
+		<Popup.Provider value={{ isPopupOpen, setIsPopupOpen }}>
 			{children}
-		</popupContext.Provider>
+		</Popup.Provider>
 	)
 }
