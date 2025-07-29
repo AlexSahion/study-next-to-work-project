@@ -1,6 +1,7 @@
 "use client";
 
 import css from './application.module.scss'
+import { PopupProvider } from '@/app/_providers';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/scss';
@@ -22,8 +23,8 @@ export const Application = () => {
 					onSlideChange={() => console.log('slide change')}
 					onSwiper={(swiper) => console.log(swiper)}
 				>
-					{itemsApplication.map(item => (
-						<SwiperSlide key={item.img}><GrayRed {...item} /></SwiperSlide>
+					{itemsApplication.map((item, index) => (
+						<SwiperSlide key={index}><GrayRed {...item} /></SwiperSlide>
 					))}
 				</Swiper>
 			</BaseContainer>
