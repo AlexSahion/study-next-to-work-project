@@ -1,7 +1,11 @@
+import { AutoparkSection } from "@/sections"
+import { Popup } from "@/sections"
+
 export default function Autopark() {
 	return (
-		<h1>
-			autopark
-		</h1>
+		<>
+			<Popup />
+			<AutoparkSection />
+		</>
 	)
 }
