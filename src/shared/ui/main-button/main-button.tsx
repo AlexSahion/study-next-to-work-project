@@ -1,17 +1,19 @@
+'use client'
 import css from './main-button.module.scss';
+import { useMyPopup } from '@/shared/hooks';
 
 interface MainButtonProps {
-	onClick?: () => void;
 	text?: string;
 	className?: string;
 	icon?: React.ReactNode;
 }
 
-export const MainButton = ({ onClick, text = '', className = '', icon }: MainButtonProps) => {
+export const MainButton = ({ text = '', className = '', icon }: MainButtonProps) => {
 	const combinedClassName = `${css['main-button']} ${className ? className : ''}`.trim();
+	const { isPopupOpen, setIsPopupOpen } = useMyPopup()
 
 	return (
-		<button onClick={onClick} className={combinedClassName}>
+		<button onClick={() => setIsPopupOpen(!isPopupOpen)} className={combinedClassName}>
 			{icon && <span className={css.icon}>{icon}</span>}
 			{text}
 		</button>
