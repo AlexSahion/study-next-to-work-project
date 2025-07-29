@@ -1,0 +1,132 @@
+@import '@styles/vars';
+
+.filter{
+	
+}
+
+.name{
+	position: relative;
+	color: rgb(23, 22, 22);
+}
+
+.button{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: $default-trans;
+
+	svg{
+		transition: $default-trans;
+	}
+}
+
+.list{
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 30px;
+	left: -10px;
+	z-index: 3;
+	min-width: 250px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	border: 1px solid rgb(188, 188, 188);
+	border-radius: 20px;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+	background: rgb(255, 255, 255);
+	transition: $default-trans;
+
+	li{
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+		cursor: pointer;
+		transition: $default-trans;
+
+		span{
+			position: relative;
+		}
+
+		span::before{
+			content: '';
+			width: 20px;
+			height: 20px;
+			display: block;
+			border: 1px solid rgb(154, 154, 154);
+			border-radius: 50%;
+			transition: $default-trans;
+		}
+
+		span::after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			background-color: $burgundy-color;
+			transition: $default-trans;
+		}
+	}
+}
+
+.capacity{
+	left: -90px;
+}
+
+.actives{
+	display: flex;
+	column-gap: 10px;
+}
+
+.grays{
+	display: flex;
+	column-gap: 10px;
+}
+
+.gray{
+	display: flex;
+	align-items: center;
+	color: rgb(154, 154, 154);
+}
+
+.reset{
+	cursor: pointer;
+}
+
+.sort{
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+
+.active{
+	opacity: 1;
+	visibility: visible;
+	top: 52px;
+}
+
+.activeButton{
+	color: $burgundy-color;
+
+	svg{
+		color: $burgundy-color;
+		transform: rotate(180deg);
+	}
+}
+
+.activeCapacity{
+	color: $burgundy-color;
+
+	span::before{
+		border: 1px solid $burgundy-color !important;
+	}
+
+	span::after{
+		transform: translate(-50%, -50%) scale(1) !important;
+	}
+}
